@@ -1,0 +1,16 @@
+{% extends "blog/base.html" %}
+{% load crispy_forms_tags %} <!--importamos nuestra libreria de forms-->
+{% block content %}
+    <div class="content-section">
+        <form method="POST">
+            {% csrf_token %} <!--sino tienes el csrf no correra.-->
+            <fieldset class="form-group">
+                <legend class="border-bottom mb-4">Blog Post</legend>
+                {{ form|crispy }} <!--form.as_p:renderiza nuestra form en p tags para que se vea mas ordenado-->
+            </fieldset>
+            <div class="form-group">
+                <button class="btn btn-outline-info" type="submit">Post</button>
+            </div>
+        </form>
+    </div>
+{% endblock content %}
