@@ -122,6 +122,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
+#carpeta que heroku usara para alamcenar archivos estaticos
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') #carpeta staticfiles
 STATIC_URL = '/static/'
 
 #paths para almacenar files, imagenes, etc que se hayan subido
