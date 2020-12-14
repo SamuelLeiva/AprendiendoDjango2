@@ -26,7 +26,8 @@ SECRET_KEY = 'zrg$qpk=f2qryo@a29q_m1ubc)y^w&alxvjq-x(&w5e%blqqx='
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+#hosts permitidos
+ALLOWED_HOSTS = ['cryptic-taiga-01219.herokuapp.com']
 
 
 # Application definition
