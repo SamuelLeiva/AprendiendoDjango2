@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 #SECRET_KEY = 'zrg$qpk=f2qryo@a29q_m1ubc)y^w&alxvjq-x(&w5e%blqqx='
 SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = (os.environ.get('DEBUG_VALUE') == 'True')
 
 #hosts permitidos
 ALLOWED_HOSTS = ['cryptic-taiga-01219.herokuapp.com']
